@@ -1,0 +1,299 @@
+Script started on Thu Oct 22 16:02:13 2015
+sh-3.00$ /usr/local/bin/gdb a3
+[?1034hGNU gdb 6.8
+Copyright (C) 2008 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.10"...
+(no debugging symbols found)
+(gdb) b mia  ain
+Breakpoint 1 at 0x106c0
+(gdb) display/i $pc
+(gdb) r
+Starting program: /home/ugc/mjtang/Desktop/Projects/a3 
+(no debugging symbols found)
+(no debugging symbols found)
+
+Breakpoint 1, 0x000106c0 in main ()
+1: x/i $pc
+0x106c0 <main+4>:       clr  %l3
+(gdb) ni
+0x000106c4 in loop ()
+1: x/i $pc
+0x106c4 <loop>: cmp  %l3, 0x28
+(gdb) ni
+0x000106c8 in loop ()
+1: x/i $pc
+0x106c8 <loop+4>:       be,a   0x10710 <Sort_guard>
+0x106cc <loop+8>:       mov  1, %l3
+(gdb) ni
+0x000106d0 in loop ()
+1: x/i $pc
+0x106d0 <loop+12>:      call  0x208e0 <rand@plt>
+0x106d4 <loop+16>:      nop 
+(gdb) p % $l3
+$1 = 0
+(gdb) ni
+0x000106d4 in loop ()
+1: x/i $pc
+0x106d4 <loop+16>:      nop 
+(gdb) ni
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+(no debugging symbols found)
+before [0] = 166
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [1] = 231
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) p $o3
+$2 = 662824084
+(gdb) ni
+before [2] = 148
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) p $o3
+$3 = -999580867
+(gdb) ni
+before [3] = 61
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [4] = 50
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [5] = 131
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [6] = 0
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [7] = 57
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [8] = 126
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) p $o3
+$4 = 267834847
+(gdb) ni
+before [9] = 223
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) no
+(gdb) ni
+before [10] = 44
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [11] = 245
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [12] = 138
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [13] = 251
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ' ni
+before [14] = 24
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [15] = 113
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [16] = 86
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [17] = 215
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [18] = 196
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [19] = 173
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [20] = 226
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [21] = 115
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [22] = 48
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [23] = 169
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [24] = 46
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [25] = 207
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [26] = 92
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [27] = 101
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [28] = 58
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [29] = 235
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [30] = 72
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [31] = 225
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [32] = 6
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [33] = 199
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [34] = 244
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [35] = 29
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) in
+Ambiguous command "in": info, init-if-undefined, inspect, internals, interpreter-exec, interrupt.
+(gdb) ni  ni
+before [36] = 146
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [37] = 99
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [38] = 96
+0x000106d8 in loop ()
+1: x/i $pc
+0x106d8 <loop+20>:      and  %o3, 0xff, %o3
+(gdb) ni
+before [39] = 25
+after [0] = 0
+after [1] = 6
+after [2] = 24
+after [3] = 25
+after [4] = 29
+after [5] = 44
+after [6] = 46
+after [7] = 48
+after [8] = 50
+after [9] = 57
+after [10] = 58
+after [11] = 61
+after [12] = 72
+after [13] = 86
+after [14] = 92
+after [15] = 96
+after [16] = 99
+after [17] = 101
+after [18] = 113
+after [19] = 115
+after [20] = 126
+after [21] = 131
+after [22] = 138
+after [23] = 146
+after [24] = 148
+after [25] = 166
+after [26] = 169
+after [27] = 173
+after [28] = 196
+after [29] = 199
+after [30] = 207
+after [31] = 215
+after [32] = 223
+after [33] = 225
+after [34] = 226
+after [35] = 231
+after [36] = 235
+after [37] = 244
+after [38] = 245
+after [39] = 251
+
+Program exited with code 021.
+(gdb) n q
+sh-3.00$ exit
+exit
+
+script done on Thu Oct 22 16:06:21 2015
